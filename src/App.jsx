@@ -1,16 +1,12 @@
-import React, { useState } from "react";
-import MovieList from "./components/MovieList.jsx";
-import MovieStats from "./components/MovieStats";
-import "./App.css";
-import AppRouter from "./routers/AppRouter.jsx";
-import { MovieProvider } from "./context/MovieContext.jsx";
+import { OrderProvider } from "./context/OrderContext";
+import AppRouter from "./router/AppRouter";
 
-const App = () => {
+function App() {
   return (
-    <MovieProvider>
+    <OrderProvider>
       <AppRouter />
-    </MovieProvider>
+    </OrderProvider>
   );
-};
+}
 
 export default App;
